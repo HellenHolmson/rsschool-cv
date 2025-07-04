@@ -18,12 +18,11 @@ Currently, I am studying to become a Frontend developer. <br>  I enjoy this fiel
 - __College__ <br>
     - Moscow Regional Medical College No.1 <br>_Paramedic_
 - __Courses__ <br>
-  - The Ratiro Training Center 
- <br>
+  - The Ratiro Training Center <br>
   _Nail Technician, Podologist_ 
-  <br>
-   -  RS School Course 
- <br>
+
+
+   -  RS School Course <br>
    _JavaScript/Frontend, Stage 0_ (in progress)
    
 ## Code example
