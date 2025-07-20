@@ -500,3 +500,49 @@ h1 {
     font-weight: 300;
     margin-bottom: 25px;
  }
+
+ .footer {
+    background-color: #030303;
+    height: 392px;
+ }
+
+ .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 50px;
+}
+
+.footer-li {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.footer-nav-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 199px;
+}
+
+.logo svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
