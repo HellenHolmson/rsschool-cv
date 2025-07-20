@@ -315,6 +315,9 @@ h1 {
     max-width: 720px;
 }
 
+.video-yt {
+    width: 1440px;
+}
 
 .gallery {
     
@@ -352,6 +355,7 @@ h1 {
 .tickets {
     margin-bottom: 75px;
 }
+
  .tickets-h {
     font-family: 'Forum';
     font-size: 80px;
@@ -375,12 +379,124 @@ h1 {
     font-weight: 200;
  }
 
+ .tickets-p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 10px;
+ }
+
+ .total {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1.65px;
+    margin-top: 20px;
+ }
+
+.buy-btn {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 50px;
+    padding: 0px 38px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.tickets-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.tickets-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex: 1;
+}
+
+.tickets-btn, 
+.tickets-amount {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tickets-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ticket-counter {
+    display: flex;
+    align-items: center;
+    border: 3px solid #000;
+}
+
+.ticket-counter button {
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ticket-counter input.number {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+}
+
  .prlx {
-    width: 1920px;
+    background-image: url(museum-images/parallax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
     height: 400px;
  }
 
- .img-prlx {
-    background-size: cover;
-    background-attachment: fixed;
+
+ .contacts {
+    margin-bottom: 75px;
+ }
+
+ .contacts-h {
+    font-family: 'Forum';
+    font-size: 80px;
+    letter-spacing: 5px;
+    line-height: 90px;
+    color: #9D8665;
+    border-bottom: 3px solid #710707;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+ }
+
+ .contacts-content {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .c-l-h {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    max-width: 227px;
+    margin-bottom: 60px;
+ }
+ 
+ .contacts-li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 25px;
  }
