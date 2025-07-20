@@ -314,3 +314,73 @@ h1 {
     margin-bottom: 20px;
     max-width: 720px;
 }
+
+
+.gallery {
+    
+    background-color: #030303;
+    color: #ffffff;
+    padding-top: 70px;
+    margin-bottom: 75px;
+}
+
+.gallery-h {
+    font-family: 'Forum';
+    color: #ffffff;
+    font-size: 80px;
+    letter-spacing: 5px;
+    line-height: 90px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+.picture-container {
+    height: 2125px;
+    overflow-y: hidden;
+
+}
+
+.picture-inner-container {
+    column-count: 3;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 15px;
+    height: auto;
+}
+
+.tickets {
+    margin-bottom: 75px;
+}
+ .tickets-h {
+    font-family: 'Forum';
+    font-size: 80px;
+    letter-spacing: 5px;
+    line-height: 90px;
+    color: #9D8665;
+    border-bottom: 3px solid #710707;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+ }
+
+ .tickets-h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+ }
+ 
+ label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+ }
+
+ .prlx {
+    width: 1920px;
+    height: 400px;
+ }
+
+ .img-prlx {
+    background-size: cover;
+    background-attachment: fixed;
+ }

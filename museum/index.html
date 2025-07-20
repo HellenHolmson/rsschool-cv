@@ -131,9 +131,7 @@
                         <p class="video-p">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
                     </div>
                     <div class="video-yt">
-                        <iframe width="1440" height="600"
-                        src="https://youtu.be/zp1BXPX8jcU" frameborder="0"
-                        loading="lazy"></iframe>
+                        <video width="100%" src="https://youtu.be/zp1BXPX8jcU" poster="museum-images/video/poster0.jpg" controls></video>
                         <!-- <iframe width="1440" height="600"
                         src="https://youtu.be/Vi5D6FKhRmo" frameborder="0"
                         loading="lazy"></iframe>
@@ -150,22 +148,24 @@
                     <div class="gallery-text">
                         <h2 class="gallery-h">ART GALLERY</h2>
                     </div>
-                    <div class="gallery-img">
-                        <img src="museum-images/gallery/galery2.jpg" alt="">
-                        <img src="museum-images/gallery/galery1.jpg" alt="">
-                        <img src="museum-images/gallery/galery3.jpg" alt="">
-                        <img src="museum-images/gallery/galery4.jpg" alt="">
-                        <img src="museum-images/gallery/galery5.jpg" alt="">
-                        <img src="museum-images/gallery/galery6.jpg" alt="">
-                        <img src="museum-images/gallery/galery7.jpg" alt="">
-                        <img src="museum-images/gallery/galery8.jpg" alt="">
-                        <img src="museum-images/gallery/galery9.jpg" alt="">
-                        <img src="museum-images/gallery/galery10.jpg" alt="">
-                        <img src="museum-images/gallery/galery11.jpg" alt="">
-                        <img src="museum-images/gallery/galery12.jpg" alt="">
-                        <img src="museum-images/gallery/galery13.jpg" alt="">
-                        <img src="museum-images/gallery/galery14.jpg" alt="">
-                        <img src="museum-images/gallery/galery15.jpg" alt="">
+                    <div class="picture-container">
+                        <div class="picture-inner-container">
+                            <img src="museum-images/gallery/galery2.jpg" alt="img">
+                            <img src="museum-images/gallery/galery1.jpg" alt="img">
+                            <img src="museum-images/gallery/galery3.jpg" alt="img">
+                            <img src="museum-images/gallery/galery4.jpg" alt="img">
+                            <img src="museum-images/gallery/galery5.jpg" alt="img">
+                            <img src="museum-images/gallery/galery6.jpg" alt="img">
+                            <img src="museum-images/gallery/galery7.jpg" alt="img">
+                            <img src="museum-images/gallery/galery8.jpg" alt="img">
+                            <img src="museum-images/gallery/galery9.jpg" alt="img">
+                            <img src="museum-images/gallery/galery10.jpg" alt="img">
+                            <img src="museum-images/gallery/galery11.jpg" alt="img">
+                            <img src="museum-images/gallery/galery12.jpg" alt="img">
+                            <img src="museum-images/gallery/galery13.jpg" alt="img">
+                            <img src="museum-images/gallery/galery14.jpg" alt="img">
+                            <img src="museum-images/gallery/galery15.jpg" alt="img">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,13 +176,49 @@
                     <div class="tickets-text">
                         <h2 class="tickets-h">BUY TICKETS</h2>
                     </div>
-                    <div class="tickets-img"></div>
-                    <div class="tickets-btn"></div>
-                    <div class="tickets-amount"></div>
-                    <div class="prlx"></div>
+                    <div class="tickets-content">
+                        <div class="tickets-img">
+                            <img src="museum-images/tickets-img.png" alt="img">
+                        </div>
+                        <div class="tickets-btn">
+                            <h3 class="tickets-h3">Ticket type</h3>
+                            <input name="ticket_type" type="radio" value="1" />
+                            <label>Permanent exhibition</label><br />
+                            <input name="ticket_type" type="radio" value="2" />
+                            <label>Temporary exhibition</label><br />
+                            <input name="ticket_type" type="radio" value="3" />
+                            <label>Combined Admission</label>
+                        </div>
+                        <div class="tickets-amount">
+                            <h3 class="tickets-h3">Amount</h3>
+                            <div class="ticket-row">
+                                <p class="tickets-p">Basic 18+</p>
+                                <div class="ticket-counter">
+                                    <button type="button"  onclick="this.nextElementSibling.stepDown()">−</button>
+                                    <input type="number" min="0" max="20" value="1" readonly class="number">
+                                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                </div>
+                            </div>
+                            <div class="ticket-row">
+                                <p class="tickets-p">Senior 65+</p>
+                                <div class="ticket-counter">
+                                    <button type="button"  onclick="this.nextElementSibling.stepDown()">−</button>
+                                    <input type="number" min="0" max="20" value="1" readonly class="number">
+                                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <p class="total">Total €220</p>
+                            </div>
+                            <button class="buy-btn" type="submit">Buy Now</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </div>  
         </section>
+        <div class="prlx">
+            <img class="img-prlx" src="museum-images/parallax.jpg" alt="parallax">
+        </div>
         <section class="contacts" id="contacts">
             <div class="container">
                 <div class="contacts-container">
