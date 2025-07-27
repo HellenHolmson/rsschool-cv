@@ -31,6 +31,17 @@ ul li{list-style-type: none;}
 img{vertical-align: top;}
 h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
 /* ----------------------------------------------------------- */
+:root {
+  color: #000000;
+  --gold: #9d8665;
+  --red: #710707;
+  --white: #ffffff;
+  --bg-color: #030303;
+  --font1: 80px;
+  --font2: 28px;
+  --font3: 22px;
+}
+
 html {
     scroll-behavior: smooth;
 	box-sizing: border-box;
@@ -38,14 +49,17 @@ html {
 
 body {
     font-family: 'Roboto' serif;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .header {
-    background-color: #030303;
+    background-color: var(--bg-color);
+    padding: 0 20px;
+    width: 100%;
 }
 
 .container {
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -55,16 +69,21 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px 0px;
+    padding: 60px 0px;
 }
 
 .header-li {
     font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    font-size: 22px;
+    color: var(--white);
+    font-size: var(--font3);
     letter-spacing: 2px;
     font-weight: 100;
     padding: 10px;
+    transition: 0.3s;
+}
+
+.header-li:hover {
+    color: var(--gold);
 }
 
 .nav-list {
@@ -82,19 +101,21 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    width: 199px;
+    max-width: 199px;
 }
 
 .logo svg {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
 
+/* WELCOME */
+
 .welcome {
-    background-color: #030303;
-    height: 810px;
-    margin-bottom: 75px;
+    width: 100%;
+    background-color: var(--bg-color);
+    padding-bottom: 120px;
 }
 
 .wlc-container {
@@ -105,10 +126,10 @@ body {
 
 h1 {
     font-family: 'Forum';
-    font-size: 80px;
+    font-size: var(--font1);
     letter-spacing: 5px;
     line-height: 90px;
-    color: #ffffff;
+    color: var(--white);
     padding: 10px 0;
     margin-bottom: 10px;
 }
@@ -126,24 +147,31 @@ h1 {
 
 .wlc-text {
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: var(--font2);
     font-weight: 200;
     letter-spacing: 2px;
-    color: #ffffff;
+    color: var(--white);
     margin-bottom: 40px;
 }
 
 .louvre-btn {
     display: inline-block;
-    background-color: #710707;
-    color: white;
-    font-size: 22px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: var(--font3);
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     letter-spacing: 2px;
     padding: 25px 64px;
+    border: none;
     border-radius: 10px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.louvre-btn:hover {
+    cursor: pointer;
+    background-color: var(--gold);
 }
 
 .wlc-right {
@@ -169,6 +197,8 @@ h1 {
     top: 92%;
 }
 
+/* VISITING */
+
 .visiting {
     height: 1116px;
     margin-bottom: 10px;
@@ -176,11 +206,11 @@ h1 {
 
 .vst-h2 {
     font-family: 'Forum';
-    font-size: 80px;
+    font-size: var(--font1);
     letter-spacing: 5px;
     line-height: 90px;
-    color: #9D8665;
-    border-bottom: 3px solid #710707;
+    color: var(--gold);
+    border-bottom: 3px solid var(--red);
     padding-bottom: 20px;
     margin-bottom: 60px;
 }
@@ -205,15 +235,15 @@ h1 {
     font-family: 'Forum';
     font-size: 32px;
     letter-spacing: 5px;
-    color: #000000;
-    border-bottom: 2px solid #710707;
+    color: var(--bg-color);
+    border-bottom: 2px solid var(--red);
     padding-bottom: 4px;
     margin-top: 20px;
 }
 
 .vst-p {
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: var(--font3);
     font-weight: 100;
     color: #000000;
 }
@@ -225,9 +255,11 @@ h1 {
     color: #000000;
 }
 
+/* EXPLORE */
+
 .explore {
     height: 865px;
-    background-color: #030303;
+    background-color: var(--bg-color);
     color: #ffffff;
     margin-bottom: 75px;
 }
@@ -264,10 +296,10 @@ h1 {
 
 .exp-h2 {
     font-family: 'Forum';
-    font-size: 80px;
+    font-size: var(--font1);
     letter-spacing: 5px;
     line-height: 90px;
-    border-bottom: 3px solid #710707;
+    border-bottom: 3px solid var(--red);
     padding-bottom: 20px;
     margin-bottom: 60px;
     margin-top: 60px;
@@ -275,18 +307,20 @@ h1 {
 
 .exp-p {
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: var(--font3);
     font-weight: 100;
     line-height: 38px;
     margin-bottom: 20px;
 }
 
 .exp-span {
-    color: #9D8665;
+    color: var(--gold);
 }
 
+/* VIDEO */
+
 .video {
-    height: 1246px;
+    max-height: 1246px;
     color: #000000;
     margin-bottom: 75px;
 }
@@ -298,8 +332,8 @@ h1 {
 
 .video-h {
     font-family: 'Forum';
-    color: #9D8665;
-    font-size: 80px;
+    color: var(--gold);
+    font-size: var(--font1);
     letter-spacing: 5px;
     line-height: 90px;
     padding-bottom: 20px;
@@ -308,7 +342,7 @@ h1 {
 
 .video-p {
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: var(--font3);
     font-weight: 300;
     line-height: 38px;
     margin-bottom: 20px;
@@ -316,21 +350,23 @@ h1 {
 }
 
 .video-yt {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
 }
 
+/* GALLERY */
+
 .gallery {
-    
-    background-color: #030303;
-    color: #ffffff;
+    background-color: var(--bg-color);
+    color: var(--white);
     padding-top: 70px;
     margin-bottom: 75px;
 }
 
 .gallery-h {
     font-family: 'Forum';
-    color: #ffffff;
-    font-size: 80px;
+    color: var(--white);
+    font-size: var(--font1);
     letter-spacing: 5px;
     line-height: 90px;
     padding-bottom: 20px;
@@ -338,18 +374,50 @@ h1 {
 }
 
 .picture-container {
+    position: relative;
     height: 2125px;
     overflow-y: hidden;
 
 }
 
 .picture-inner-container {
-    column-count: 3;
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 125px;
     flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 15px;
+}
+
+.gal-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 456px;
+    width: 100%;
+}
+
+.gal-column img {
+    width: 100%;
     height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.tall-column {
+    margin-top: -50px;
+    margin-bottom: -80px;
+}
+
+.picture-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #030303 100%);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .tickets {
@@ -358,37 +426,37 @@ h1 {
 
  .tickets-h {
     font-family: 'Forum';
-    font-size: 80px;
+    font-size: var(--font1);
     letter-spacing: 5px;
     line-height: 90px;
-    color: #9D8665;
-    border-bottom: 3px solid #710707;
+    color: var(--gold);
+    border-bottom: 3px solid var(--red);
     padding-bottom: 20px;
     margin-bottom: 60px;
  }
 
- .tickets-h3 {
+ .tickets-h4 {
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: var(--font2);
     font-weight: 600;
  }
  
  label {
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    font-weight: 200;
+    font-size: var(--font3);
+    font-weight: 300;
  }
 
  .tickets-p {
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: var(--font3);
     font-weight: 200;
     margin-bottom: 10px;
  }
 
  .total {
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: var(--font2);
     font-weight: 600;
     letter-spacing: 1.65px;
     margin-top: 20px;
@@ -397,13 +465,22 @@ h1 {
 .buy-btn {
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    font-weight: 200;
+    font-size: var(--font3);
+    font-weight: 300;
     letter-spacing: 2px;
     line-height: 50px;
     padding: 0px 38px;
-    color: #ffffff;
+    color: var(--white);
     background-color: #000000;
+    border: none;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    cursor: pointer;
+    background-color: var(--gold);
+    color: #000000;
 }
 
 .tickets-content {
@@ -435,31 +512,38 @@ h1 {
     gap: 20px;
 }
 
+
 .ticket-counter {
     display: flex;
     align-items: center;
-    border: 3px solid #000;
+    justify-content: center;
+    border: 4px solid #000;
 }
 
 .ticket-counter button {
-    padding: 8px 16px;
+    max-width: 50px;
+    height: 50px;
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 40px;
+    font-weight: 600;
     cursor: pointer;
 }
 
-.ticket-counter input.number {
-    width: 40px;
+.ticket-counter input {
+    font-family: 'Roboto', sans-serif;
+    width: 50px;
+    height: 50px;
     text-align: center;
     border: none;
-    font-size: 16px;
+    font-size: 22px;
 }
 
  .prlx {
     background-image: url(museum-images/parallax.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     width: 100%;
     height: 400px;
  }
@@ -501,48 +585,217 @@ h1 {
     margin-bottom: 25px;
  }
 
+ .link-contacts {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    transition: 0.3s;
+ }
+
+ .link-contacts:hover {
+    color: var(--gold);
+ }
+
  .footer {
-    background-color: #030303;
-    height: 392px;
+    background-color: var(--bg-color);
  }
 
  .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    padding: 100px 50px;
+    padding: 100px 50px 60px 50px;
 }
 
 .footer-li {
     font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    font-size: 22px;
+    color: var(--white);
+    font-size: var(--font3);
     letter-spacing: 2px;
     font-weight: 100;
     padding: 10px;
+    transition: 0.3s;
 }
 
-.footer-nav-list {
+.footer-li:hover {
+    color: var(--gold);
+}
+
+.footer-nav-list-top {
     display: flex;
     gap: 40px;
     align-items: center;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .footer-nav {
-    flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 120px;
+}
+
+.footer-social {
     display: flex;
-    justify-content: center;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: 80px;
+}
+
+.footer-social ul {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-social img {
+    max-width: 48px;
+    max-height: 48px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    padding: 10px;
+    filter: brightness(100) invert(0);
+    transition: 0.3s;
+}
+
+.footer-social img:hover {
+    filter: invert(74%) sepia(27%) saturate(400%) hue-rotate(358deg) brightness(120%) contrast(93%);
 }
 
 .logo {
     display: flex;
     align-items: center;
-    width: 199px;
+    max-width: 199px;
 }
 
 .logo svg {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
+
+.footer-line {
+    border-top: 3px solid #666;
+    margin: 2px 0px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  color: var(--white);
+  /* flex-wrap: wrap; */
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: var(--font3);
+  letter-spacing: 2px;
+}
+
+/* ADAPTIV */
+
+@media (max-width: 1025px) {
+    :root {
+        --font1: 50px;
+        --font2: 28px;
+        --font3: 20px;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 1024px;
+        padding: 0 38px;
+        margin: 0 auto;
+    }
+
+        /* HEADER */
+
+    .header-container{
+        height: 130px;
+    }
+
+        /* WELCOME */
+     
+    .welcome {
+    width: 100%;
+    max-width: 1024px;
+    background-color: var(--bg-color);
+    margin-bottom: 75px;
+    }
+
+    .wlc-container {
+        position: relative;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .wlc-left{
+        position: absolute;
+        top: 20%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 30px;
+    }
+
+    .louvre-btn {
+        display: inline-block;
+        background-color: var(--red);
+        color: var(--white);
+        font-size: var(--font3);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        letter-spacing: 2px;
+        padding: 25px 64px;
+        border: none;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .louvre-btn:hover {
+        cursor: pointer;
+        background-color: var(--gold);
+    }
+
+    /* .wlc-right {
+        display: flex;
+        justify-content: end;
+        flex: 1;
+        overflow: hidden;
+    } */
+
+    .wlc-img img {
+        display: flex;
+        justify-content: end;
+        flex: 1;
+        overflow: hidden;
+            max-width: 700px;
+            width: 100%;
+            height: auto;
+            display: block;
+    }
+
+    .wlc-slider {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+    }
+
+    /* VIDEO */
+
+    .video-yt {
+    max-width: 1024px;
+    width: 100%;
+    }
+
+        
+    }
