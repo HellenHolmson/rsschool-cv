@@ -26,8 +26,8 @@
                         </defs>
                     </svg>
                 </div>
-                <nav class="header-nav">
-                    <ul class="nav-list">
+                <nav class="header-nav" >
+                    <ul class="nav-list" id="nav">
                         <li>
                             <a href="#visiting" class="header-li">Visiting</a>
                         </li>
@@ -48,6 +48,13 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="burger-div">
+                    <button class="burger" id="burger">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </button>
+                </div>
             </div>
         </header>
         <main>
@@ -69,7 +76,7 @@
                     </div>
                     <div class="wlc-right">
                         <div class="wlc-img">
-                            <img src="museum-images/bcmona.png" alt="Mona Lisa">
+                            <img src="museum-images/welcome-slide/wlc1.jpg" alt="slider-1">
                         </div>
                         <div class="wlc-slider">
                             <img src="museum-images/Slider-pagination.png" alt="slider">
@@ -158,8 +165,12 @@
                             <p class="exp-p p-hidden">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
                         
                         </div>
-                        <div class="exp-right">
-                            <img class="exp-img-aft" src="museum-images/after.jpg" alt="After">
+                        <div class="exp-right" id="exp-right">
+                            <img class="exp-img-aft" src="museum-images/after.jpg" alt="after">
+                            <div class="bot" id="bot">
+                                <img src="museum-images/before.jpg" alt="before">
+                            </div>
+                            <div class="bar" id="bar"></div>
                         </div>
                     </div>
                 </div>
@@ -195,22 +206,22 @@
                         <h2 class="gallery-h">ART GALLERY</h2>
                     </div>
                     <div class="picture-container">
-                        <div class="picture-inner-container">
-                            <img src="museum-images/gallery/galery2.jpg" alt="img">
-                            <img src="museum-images/gallery/galery1.jpg" alt="img">
-                            <img src="museum-images/gallery/galery3.jpg" alt="img">
-                            <img src="museum-images/gallery/galery4.jpg" alt="img">
-                            <img src="museum-images/gallery/galery5.jpg" alt="img">
-                            <img src="museum-images/gallery/galery6.jpg" alt="img">
-                            <img src="museum-images/gallery/galery7.jpg" alt="img">
-                            <img src="museum-images/gallery/galery8.jpg" alt="img">
-                            <img src="museum-images/gallery/galery9.jpg" alt="img">
-                            <img src="museum-images/gallery/galery10.jpg" alt="img">
-                            <img src="museum-images/gallery/galery11.jpg" alt="img">
-                            <img src="museum-images/gallery/galery12.jpg" alt="img">
-                            <img src="museum-images/gallery/galery13.jpg" alt="img">
-                            <img src="museum-images/gallery/galery14.jpg" alt="img">
-                            <img src="museum-images/gallery/galery15.jpg" alt="img">
+                        <div class="picture-inner-container" id="">
+                            <img class="gallery-img" src="museum-images/gallery/galery2.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery1.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery3.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery4.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery5.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery6.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery7.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery8.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery9.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery10.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery11.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery12.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery13.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery14.jpg" alt="img">
+                            <img class="gallery-img" src="museum-images/gallery/galery15.jpg" alt="img">
                         </div>
                     </div>
                 </div>
@@ -380,6 +391,7 @@
                 <span class="footer-bottom-text">HellenHolmson</span>
             </div>
         </footer>
+        <script defer src="museum-script.js"></script>
     </body>
 </html>
 
